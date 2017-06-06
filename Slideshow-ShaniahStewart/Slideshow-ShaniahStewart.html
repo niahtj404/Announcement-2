@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
+<style type="text/css">
+p {
+	color: white;
+	
+}
+nav {
+	font-family: 'Londrina Shadow', cursive;
+	font-size: 30pt;
+	word-spacing: 30px; 
+	letter-spacing: 20px;
+	padding: 5pt;
+	text-align: center;
+	color: white;
+}
+nav:hover {
+		color: #94deff;
+		transition: 1s;
+		font-size: 35pt;
+	}
+body {
+	background-image: url("IDlogo.jpeg");
+	background-size: cover;
+}
+.photo {
+	border-radius: 20%;
+	
+}
+.photo img {
+	border-radius: 20%;
+	margin: auto;
+	width: 50%;
+	padding-top: 5%;
+	padding-bottom: 20%
+	display: inline-block;
+}
+#photo1 {
+	margin-right: 40px;
+
+}
+.photo{
+	margin-left: 420px;
+}
+#hh{
+	width: 100%;
+
+}
+</style>
+	<title>Slideshow</title>
+</head>
+
+<body>
+<div id= "hh"><img src="idlogo.png">
+
+<nav>
+	LIVE 
+	<a href="https://www.investigationdiscovery.com/tv-shows/">SHOWS</a>
+	CONTEST
+	<a href="https://www.investigationdiscovery.com/schedule">SCHEDULE</a>
+	<a href="http://crimefeed.com/">CRIME FEED<a/>
+</nav>
+</div>
+<div class= photo>
+	<div class= pic id= "photo1"><img src="ialmostgotaway.jpg"></div>
+<p>For the lowlifes profiled in this series, their stories may be different, but the motive is always the same -- to live life on the lam. They evaded justice for years, sometimes decades, by using all means necessary, until law enforcement finally caught up to them.</p>
+	<div class= pic id= "photo2"><img src="disappeared.jpeg"></div>
+<p>Here today, gone tomorrow. Thousands of people go missing in the United States each year, leaving behind only a mystery without any clues. Their stories are told in "Disappeared" through the voices of family, friends and investigators trying to solve the case.</p>
+	<div class= pic id= "photo3"><img src="fearthyneighbor.jpeg"></div>
+<p>You've got the home you've always dreamed of and the neighborhood to match. But someone close by has very different ideas. FEAR THY NEIGHBOR reveals what happens when a new homeowner unwittingly takes up residence within a stone's throw of a psycho, or when evil minds decide to lay down roots right next door. These are the terrifying tales of the unwanted neighbors who turn home sweet home into home sweet hell.</p>
+	<div class= pic id= "photo5"><img src="whodidimarry.jpg"></div>
+<p>"Who the (Bleep) Did I Marry?" tells the real stories of men and women who lived happy, seemingly normal lives with the people they loved -- and who they thought they knew. When a clue or mishap causes them to dig further into the secret lives of their spouses, the shocking truths lead them to wonder who it is they really fell in love with. These stories include husbands with multiple families, spies working under cover, those who steal thousands of dollars, and others whose double lives include murder.</p>
+	<div class= pic id= "photo6"><img src="deadlywomen.jpeg"></div>
+<p>Using dramatic re-enactments bolstered by police reports and forensic evidence, Investigation Discovery delves into the minds of female killers in "Deadly Women." Each episode focuses on four different cases in which women, for a variety of reasons and with a variety of methods, chose to take the lives of others.</p>
+
+<div>
+<a class="back-button" onclick="plusDivs[-1]"></a>
+<a class="forward-button" onclick="plusDivs[+1]"></a>
+</div>
+
+<script type="text/javascript">
+<script type="text/javascript">
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+       function plusDivs(n){
+            showDivs(slideIndex+=n);
+        }
+        function showDivs(n){
+            
+           var x = document.getElementsByClassName("slide");
+            if (n > x.length){slideIndex = 1}
+            if (n < 1){slideIndex = x.length}
+            var i = 0;
+            while (i<x.length){
+                x[i].style.display = "none";
+                i++;
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
+</script>
+
+
+
+</div>
+</body>
+</html>
